@@ -1,8 +1,5 @@
-#oh-my-posh --init --shell pwsh --config ~\AppData\Local\Programs\oh-my-posh\themes\illusi0n.omp.json | Invoke-Expression
+cls #clear the runtime_preview on the opening
 
-#clear the terminal on the opening
-
-cls
 New-Alias k kubectl
 Remove-Alias h
 New-Alias h helm
@@ -44,7 +41,7 @@ function kn {
 }
 
 $ENV:STARSHIP_CONFIG = "$HOME\.starship\starship.toml"
-$ENV:STARSHIP_DISTRO = "者 xcad"
+$ENV:STARSHIP_DISTRO = "者 karthik"
 Invoke-Expression (&starship init powershell)
 
 
