@@ -1,0 +1,2 @@
+[wsl2]
+memory=120GB # Limits VM memory in WSL 2 to 128 GB

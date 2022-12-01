@@ -1,0 +1,9 @@
+[user]
+	name = KARTHIK LAL
+	email = karthik.lal558@gmail.com
+[commit]
+	gpgSign = true
+[credential]
+	helper = cache
+[core]
+	editor = nvim
