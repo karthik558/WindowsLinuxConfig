@@ -10,8 +10,8 @@ $all[╰─](238)$character"""
 
 # Change the default prompt characters
 [character]
-success_symbol = "[](238)"
-error_symbol = "[](238)"
+error_symbol = "[❌](bold red) "
+success_symbol = "[⚡](bold green)" 
 
 # Shows an icon that should be included by zshrc script based on the distribution or os
 [env_var.STARSHIP_DISTRO]
@@ -28,7 +28,7 @@ disabled = true  # disable in powershell
 show_always = false
 
 [directory]
-truncation_length = 3
+truncation_length = 5
 truncation_symbol = "…/"
 home_symbol = " ~"
 read_only_style = "197"
@@ -57,6 +57,13 @@ staged = '[++\($count\)](green)'
 renamed = "襁 "
 deleted = " "
 
+[hostname]
+ssh_only = false
+format = "<[$hostname]($style)>"
+trim_at = "-"
+style = "bold dimmed white"
+disabled = true
+
 [terraform]
 format = "via [ terraform $version]($style) 壟 [$workspace]($style) "
 
@@ -73,6 +80,21 @@ format = "via [ $version](bold purple) "
 symbol = " "
 python_binary = "python3"
 
+[aws]
+symbol = "  "
+
+[buf]
+symbol = " "
+
+[c]
+symbol = " "
+
+[conda]
+symbol = " "
+
+[dart]
+symbol = " "
+
 [nodejs]
 format = "via [ $version](bold green) "
 disabled = true
@@ -80,9 +102,39 @@ disabled = true
 [ruby]
 format = "via [ $version]($style) "
 
+[rust]
+symbol = " "
+
+[scala]
+symbol = " "
+
+[spack]
+symbol = "🅢 "
+
+[package]
+symbol = " "
+
 [kubernetes]
 format = 'on [ $context\($namespace\)](bold purple) '
 disabled = false
 [kubernetes.context_aliases]
 "clcreative-k8s-staging" = "cl-k8s-staging"
 "clcreative-k8s-production" = "cl-k8s-prod"
+
+# Shows battery information
+# [battery]
+# full_symbol = "🔋"
+# charging_symbol = "🔌 "
+# discharging_symbol = "⚡️"
+
+# [[battery.display]]  # "bold red" style when capacity is between 0% and 10%
+# threshold = 10
+# style = "bold red"
+
+# [[battery.display]]  # "bold yellow" style when capacity is between 10% and 30%
+# threshold = 30
+# style = "bold yellow"
+
+# [[battery.display]]
+# threshold = 100
+# style = "bold green"
