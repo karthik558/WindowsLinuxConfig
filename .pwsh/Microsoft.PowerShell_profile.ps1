@@ -24,6 +24,9 @@ function Get-GitRemote { & git remote -v $args }
 New-Alias -Name gr -Value Get-GitRemote -Force -Option AllScope
 function Get-GitDiff { & git diff $args }
 New-Alias -Name gd -Value Get-GitDiff -Force -Option AllScope
+function Get-GitRebase { & git rebase -i $args }
+New-Alias -Name gri -Value Get-GitRebase -Force -Option AllScope
+
 
 New-Alias k kubectl
 Remove-Alias h

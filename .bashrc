@@ -118,18 +118,22 @@ export STARSHIP_DISTRO="$ICON "
 export STARSHIP_CONFIG=~/.starship/starship.toml
 eval "$(starship init bash)"
 
-# custom aliases
+# Linux File-System Aliases
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
-alias lt='ls --tree'
 
-# custom aliases
+# Linux System Aliases
 alias clean="sudo apt autoclean"
 alias remove="sudo apt autoremove"
 alias update="sudo apt update && sudo apt upgrade -y"
 alias install="sudo apt install"
 alias uninstall="sudo apt purge"
+
+# Other Linux Aliases
+alias lf="neofetch"
+
+# Git Aliases
 alias gin="git init"
 alias ga="git add ."
 alias gs="git status"
@@ -137,3 +141,7 @@ alias gc="git commit -s"
 alias gp="git push"
 alias gb="git checkout -b"
 alias gpull="git pull"
+alias gr="git rebase -i"
+
+# Fix GPG error issue on (WSL)
+export GPG_TTY=$(tty)
