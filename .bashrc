@@ -119,7 +119,6 @@ export STARSHIP_CONFIG=~/.starship/starship.toml
 eval "$(starship init bash)"
 
 # custom aliases
-alias ls="lsd"
 alias ll='ls -l'
 alias la='ls -a'
 alias lla='ls -la'
@@ -138,4 +137,3 @@ alias gc="git commit -s"
 alias gp="git push"
 alias gb="git checkout -b"
 alias gpull="git pull"
-alias cat="batcat"
