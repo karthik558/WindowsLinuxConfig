@@ -142,6 +142,7 @@ alias gp="git push"
 alias gb="git checkout -b"
 alias gpull="git pull"
 alias gr="git rebase -i"
+alias gd="git diff"
 
 # Fix GPG error issue on (WSL)
 export GPG_TTY=$(tty)
