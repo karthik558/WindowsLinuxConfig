@@ -1,5 +1,7 @@
 # **Windows and Linux Dotfile's🧑‍💻**
 
+![Terminal Preview](./assets/terminal.png)
+
 ## **This dotfiles includes**
 
 - PowerShell Config's
