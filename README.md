@@ -1,6 +1,7 @@
 # **Windows and Linux Dotfile's🧑‍💻**
 
 ![Terminal Preview](./assets/terminal.png)
+![Nvim Preview](./assets/nvim.png)
 
 ## **This dotfiles includes**
 
